@@ -111,6 +111,9 @@ body {
   display: flex;
   align-items: center;
 }
+.imageData p {
+  overflow: hidden;
+}
 .imageData img {
   width: 100px;
   height: 40px;
