@@ -11,7 +11,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Black Ops One", cursive;
+  font-family: "Black Ops One", Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
 }
 body {
   background-color: var(--background);
