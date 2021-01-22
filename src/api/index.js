@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const getImageSrc = async ({ url, dispatch }) => {
-  dispatch({ type: "FETCH_IMAGE_REQUEST" });
+  dispatch({ type: "FETCH_IMAGE_REQUEST", payload: { url } });
   try {
     let res = await axios.post(
       "https://assetsmania.herokuapp.com/api/get_images",

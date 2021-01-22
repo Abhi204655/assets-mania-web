@@ -3,6 +3,7 @@ export const reducer = (state, action) => {
     case "FETCH_IMAGE_REQUEST":
       return {
         ...state,
+        url: action.payload.url,
         loading: true,
         images: null,
         error: null,
@@ -19,6 +20,7 @@ export const reducer = (state, action) => {
         error: action.payload.error,
         loading: false,
         images: null,
+        url: null,
       };
     case "DOWNLOAD_FILES":
       return {

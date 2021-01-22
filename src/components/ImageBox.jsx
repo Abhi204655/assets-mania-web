@@ -6,7 +6,9 @@ const ImageBox = ({ url, dispatch }) => {
   return (
     <div className="imageBox">
       <div className="imageData">
-        <img src={url} alt="downloadable" />
+        <div className="image">
+          <img src={url} alt="downloadable" />
+        </div>
         <p className="imageName">{ImageName}</p>
       </div>
       <button className="btn" onClick={() => downloadFile(url, dispatch)}>

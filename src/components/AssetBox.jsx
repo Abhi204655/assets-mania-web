@@ -9,7 +9,7 @@ const AssetBox = ({ state, dispatch }) => {
         <h2>Images:</h2>
         <button
           className="btn"
-          onClick={() => downloadZip(state.images, dispatch)}
+          onClick={() => downloadZip(state.images, dispatch, state.url)}
         >
           {state.loadingDownload ? "Downloading.." : "Download All"}
         </button>

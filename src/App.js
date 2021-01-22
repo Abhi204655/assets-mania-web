@@ -13,6 +13,7 @@ const initialState = {
   loadingDownload: false,
   images: null,
   error: null,
+  url: null,
 };
 
 const App = () => {
