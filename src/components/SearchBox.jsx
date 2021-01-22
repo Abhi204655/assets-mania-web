@@ -17,7 +17,13 @@ const SearchBox = ({ state, dispatch }) => {
 
   const getImages = async () => {
     if (url !== "" && isValidURL(url)) {
-      await _api.getImageSrc({ url, dispatch });
+      let modifiedUrl;
+      if (/http/.test(url)) {
+        modifiedUrl = url;
+      } else {
+        modifiedUrl = "http://" + url;
+      }
+      await _api.getImageSrc({ url: modifiedUrl, dispatch });
     } else {
       MySwal.fire({
         icon: "warning",
